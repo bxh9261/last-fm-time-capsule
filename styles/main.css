@@ -1,0 +1,131 @@
+    *{
+        font-family: 'Padauk', sans-serif;
+    }
+    h1{
+        margin-bottom: 0px;
+    }
+    header{
+        border: 2px solid black;
+        padding-bottom: 20px;
+        background: lightgray;
+        text-align: center;
+    }
+    #red{
+        color: red;
+    }
+    button{
+        border:2px solid black;
+        border-radius:18px;
+        background-color: transparent;
+        color: red;
+        font-weight: bold;
+        padding-right: .8em;
+        padding-left: .8em
+    }
+    button:hover{
+	background-color: black;
+    }
+    button:active{
+    	background-color: red;
+    	color: black;
+    	text-decoration: underline;
+    }
+    #albums{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 15vh;
+    }
+    .album{
+        margin-left: 3vw;
+        margin-right: 3vw;
+        margin-top: 2vw;
+        border: 2px solid black;
+        width: 10vw;
+        height: 20vw;
+        background: white;
+	overflow: hidden;
+    }
+    .settings{
+        text-align: center;
+    }
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background-color: lightgray;
+        border-top: 2px solid black;
+    }
+    #lastMonth{
+        margin-right: 30vw;
+    }
+    #nextMonth{
+        margin-left: 30vw;
+    }
+    #back
+    {
+        margin-right: 3px;
+    }
+    #forward
+    {
+        margin-left: 3px;
+    }
+    img{
+        height: 10vw;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        overflow-wrap: normal;
+    }
+    #instructions
+    {
+        margin-top: 2vh;
+        margin-bottom: 2.5vh;
+        margin-right: 3vw;
+        margin-left: 3vw;
+    }
+    #search
+    {
+        margin-top: 1vh;
+    }
+    #text
+    {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        margin-top: 2vh;
+    }
+    #names
+    {
+        margin-top: .25vh;
+        font-weight: bold;
+    }
+    #doc
+    {
+        color: red;
+    }
+
+
+    @media only screen and (max-width: 1020px){
+        #albums p{
+            visibility: hidden;
+        }
+        .album{
+            height: 10vw;
+        }
+	#lastMonth{
+       	    margin-right: 6px;
+    	}
+        #nextMonth{
+            margin-left: 6px;
+        }
+        .widgets
+        {
+            
+        }
+    }
